@@ -1,0 +1,100 @@
+.container
+  max-width: 120rem
+  margin: 8rem auto
+  background-color: var(--color-gray-light-2)
+  box-shadow: var(--shadow-dark)
+
+  min-height: 50rem
+  
+  @media only screen and (max-width: $breakpoint-largest)
+    margin: 0
+    max-width: 100%
+    width: 100%
+    
+
+.header
+  font-size: 1.4rem
+  height: 7rem
+  background-color: #fff
+  border-bottom: var(--border)
+
+  display: flex
+  justify-content: space-between
+  align-items: center
+  
+  @media only screen and (max-width: $breakpoint-smallest)
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    height: 11rem
+    -webkit-align-content: space-around
+    align-content: space-around
+    border-bottom: 0
+
+.content
+  display: flex
+  
+  @media only screen and (max-width: $breakpoint-medium)
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+
+.sidebar
+  background-color: var(--color-gray-dark-1)
+
+  flex: 0 0 18%
+  display: flex
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-justify-content: space-between 
+  justify-content: space-between
+
+.hotel-view
+  background-color: #fff
+  color: var(--color-gray-dark-2)
+
+  flex: 1
+  
+.details
+  font-size: 1.4rem 
+  display: flex
+  padding: 4.5rem
+  background-color: var(--color-gray-light-1)
+  border-bottom: var(--border)
+  @media only screen and (max-width: $breakpoint-medium)
+    padding: 3rem
+  @media only screen and (max-width: $breakpoint-small)
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+
+.description
+  background-color: #fff
+  -webkit-box-shadow: 0 2rem 5rem rgba(0,0,0,.1)
+  box-shadow: var(--shadow-light)
+  padding: 3rem
+  font-size: 1.4rem 
+  -webkit-flex: 0 0 60%
+  -ms-flex: 0 0 60%
+  flex: 0 0 60%
+  margin-right: 4.5rem
+  @media only screen and (max-width: $breakpoint-medium)
+    padding: 2rem
+    margin-right: 3rem
+  @media only screen and (max-width: $breakpoint-small)
+    margin-right: 0
+    margin-bottom: 3rem
+.user-reviews
+  -webkit-flex: 1
+  -ms-flex: 1
+  flex: 1
+  
+  // -ms-text-align-last: center
+  // text-align-last: center
+  display: flex
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-align-items: center
+  align-items: center
